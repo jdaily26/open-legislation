@@ -10,6 +10,7 @@
     "fact-sheet": { "label": "Committee fact sheet", "summary": "Explain the bill on one page", "file": "committee-fact-sheet.md" },
     "package": { "label": "Legislative package", "summary": "Prepare for a sponsor and hearing", "file": "legislative-package.md" }
   },
+  "draftDates": { "v0.1": "2026-11-20" },
   "releases": {
     "v0.1": {
       "bill/example": "Early model clauses cover the award, public review, the agreement, verification, and administration.",

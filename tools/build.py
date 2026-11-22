@@ -44,7 +44,7 @@ def document_html(text):
     return re.sub(r"(</?h)([1-5])(>)", lambda tag: tag[1] + str(int(tag[2]) + 1) + tag[3], rendered)
 
 
-def history(relative_path, release_notes, key):
+def history(relative_path, release_notes, draft_dates, key):
     hashes = git(
         "log", "--first-parent", "--diff-filter=AM", "--format=%H", "HEAD", "--", relative_path
     ).splitlines()
@@ -65,7 +65,8 @@ def history(relative_path, release_notes, key):
             "id": sha[:9],
             "commit": sha,
             "label": label,
-            "date": date,
+            "date": draft_dates.get(label, date),
+            "archivedDraft": label in draft_dates,
             "summary": release_notes.get(label, {}).get(key, title),
             "body": document_html(text),
             "filename": f"{filename}-{relative_path.split('/')[1]}-{label}.md",
@@ -89,7 +90,7 @@ def main():
         document = {"label": entry["label"], "summary": entry["summary"], "editions": {}}
         for edition, directory in catalog["collections"].items():
             source = f"documents/{directory}/{entry['file']}"
-            versions = history(source, catalog["releases"], f"{key}/{edition}")
+            versions = history(source, catalog["releases"], catalog["draftDates"], f"{key}/{edition}")
             reference_word = f"{key}-{edition}-v1.0.docx"
             for version in versions:
                 if version["label"] == "v1.0" and (ROOT / "downloads" / reference_word).is_file():

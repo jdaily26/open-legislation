@@ -92,8 +92,6 @@ function prepareDocument(active, current) {
 
 function historyView(item, editions) {
   const route = baseRoute(view);
-  const returnLink = link("Read current version", route, true);
-  returnLink.className = "button";
   const lead = element("p", item.label + " · " + (view.edition === "template" ? "Template" : "Data center example"), "navigation-note");
   const list = element("ol", null, "version-list");
   for (const [index, revision] of editions.revisions.entries()) {
@@ -101,17 +99,17 @@ function historyView(item, editions) {
     const info = element("div", null, "version-top");
     const time = element("time", formatDate(revision.date));
     time.dateTime = revision.date;
-    time.title = "Date added to the repository";
+    time.title = revision.archivedDraft ? "Original draft date" : "Date added to the repository";
     info.append(element("strong", revision.label), time);
     if (index === 0) info.append(element("span", "Current", "version-current"));
     const actions = element("div", null, "version-actions");
-    actions.append(link("Read version", index === 0 ? route : route + "/revision/" + revision.id, true));
+    actions.append(link("Read " + revision.label, index === 0 ? route : route + "/revision/" + revision.id, true));
     if (revision.changes) actions.append(link("Compare with previous", route + "/compare/" + revision.id, true));
     else actions.append(element("span", "First version in the repository", "navigation-note"));
     card.append(info, element("p", revision.summary), actions);
     list.append(card);
   }
-  panel.replaceChildren(element("h2", "Revision history"), lead, list, returnLink);
+  panel.replaceChildren(element("h2", "Revision history"), lead, list);
 }
 
 function comparisonView(item, newer, older) {
