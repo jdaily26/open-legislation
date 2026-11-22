@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f3f1e8">
-<meta name="description" content="Policy templates, model state bills, committee fact sheets, and revision history. Start with Data Center Community Benefits.">
+<meta name="description" content="Policy templates, model state bills, committee fact sheets, and revision history for data center community benefits and school district AI purchases.">
 <title>Open Legislation · Policy library</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -25,10 +25,10 @@
       <h1 id="library-title">Legislative library</h1>
       <p>Policy templates, model bills, and the record of how they change.</p>
     </div>
-    <div class="hero-example">
-      <span class="eyebrow">First proposal</span>
-      <h2>Data center community benefits</h2>
-      <p>Give residents a say before cities award data center incentives.</p>
+    <div class="hero-example" aria-live="polite" aria-atomic="true">
+      <span class="eyebrow" id="proposal-label">First proposal</span>
+      <h2 id="proposal-title">Data center community benefits</h2>
+      <p id="proposal-summary">Give residents a say before cities award data center incentives.</p>
     </div>
   </section>
   <div class="layout">
@@ -39,10 +39,7 @@
     </aside>
     <section class="workspace" aria-label="Selected document" id="workspace">
       <div class="toolbar" hidden>
-        <nav class="view-switch" aria-label="Document edition">
-          <a id="template-link" href="#brief/template" data-route>Template</a>
-          <a id="example-link" href="#brief/example" data-route>Data center example</a>
-        </nav>
+        <nav id="edition-list" class="view-switch" aria-label="Proposal and templates"></nav>
         <div class="toolbar-actions">
           <a class="button" id="history-link" href="#brief/example/history" data-route>Revision history</a>
           <a class="button button-primary" id="contribute-link" href="https://github.com/jdaily26/open-legislation">Suggest an edit</a>

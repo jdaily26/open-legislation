@@ -3,6 +3,8 @@
 const byId = (id) => document.getElementById(id);
 const data = JSON.parse(byId("library-data").textContent);
 const documents = data.documents;
+const collections = data.collections;
+const editionLinks = new Map();
 const panel = byId("document");
 const workspace = byId("workspace");
 const files = byId("document-files");
@@ -38,7 +40,7 @@ function baseRoute(state) {
 function readLocation() {
   const [group, edition, action, revision, section] = location.hash.slice(1).split("/");
   if (!Object.hasOwn(documents, group)) return { group: "brief", edition: "example", action: "read" };
-  const state = { group, edition: edition === "template" ? "template" : "example", action: "read" };
+  const state = { group, edition: Object.hasOwn(collections, edition) ? edition : "example", action: "read" };
   if (action === "history") return { ...state, action };
   if (action === "revision" || action === "compare") return { ...state, action, revision, section };
   if (action === "section") return { ...state, section: revision };
@@ -92,7 +94,7 @@ function prepareDocument(active, current) {
 
 function historyView(item, editions) {
   const route = baseRoute(view);
-  const lead = element("p", item.label + " · " + (view.edition === "template" ? "Template" : "Data center example"), "navigation-note");
+  const lead = element("p", item.label + " · " + collections[view.edition].label, "navigation-note");
   const list = element("ol", null, "version-list");
   for (const [index, revision] of editions.revisions.entries()) {
     const card = element("li", null, "version-row");
@@ -177,8 +179,13 @@ function render(moveFocus = false) {
     node.href = "#" + node.dataset.group + "/" + view.edition;
     setCurrent(node, node.dataset.group === view.group);
   }
-  for (const name of ["template", "example"]) {
-    const node = byId(name + "-link");
+  const collection = collections[view.edition];
+  if (byId("proposal-title").textContent !== collection.title) {
+    byId("proposal-label").textContent = collection.eyebrow;
+    byId("proposal-title").textContent = collection.title;
+    byId("proposal-summary").textContent = collection.summary;
+  }
+  for (const [name, node] of editionLinks) {
     node.href = "#" + view.group + "/" + name;
     setCurrent(node, name === view.edition);
   }
@@ -217,6 +224,13 @@ function render(moveFocus = false) {
     }
   }
   if (moveFocus || location.hash) scrollToPanel();
+}
+
+for (const [name, collection] of Object.entries(collections)) {
+  const node = link(collection.label, "#brief/" + name, true);
+  node.id = name + "-link";
+  editionLinks.set(name, node);
+  byId("edition-list").append(node);
 }
 
 for (const [name, spec] of Object.entries(documents)) {

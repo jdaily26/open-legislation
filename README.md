@@ -2,16 +2,16 @@
 
 [Read the public library](https://jdaily26.github.io/open-legislation/).
 
-A public collection of policy briefs, model state bills, committee fact sheets and legislative packages. The first worked proposal is **Data Center Community Benefits**.
+A public collection of policy briefs, model state bills, committee fact sheets and legislative packages. The worked proposals cover **Data Center Community Benefits** and **School District AI Purchasing Reports**.
 
-| Document | Reusable template | Worked proposal |
-| --- | --- | --- |
-| Policy brief | [Template](documents/templates/policy-brief.md) | [Data center brief](documents/data-center-community-benefits/policy-brief.md) |
-| State bill | [Template](documents/templates/state-bill.md) | [Data center model bill](documents/data-center-community-benefits/state-bill.md) |
-| Committee fact sheet | [Template](documents/templates/committee-fact-sheet.md) | [Data center fact sheet](documents/data-center-community-benefits/committee-fact-sheet.md) |
-| Legislative package | [Template](documents/templates/legislative-package.md) | [Data center package](documents/data-center-community-benefits/legislative-package.md) |
-| Rebuttals | [Template](documents/templates/rebuttals.md) | [Data center rebuttals](documents/data-center-community-benefits/rebuttals.md) |
-| Talking points | [Template](documents/templates/talking-points.md) | [Data center talking points](documents/data-center-community-benefits/talking-points.md) |
+| Document | Reusable template | Data center example | AI in schools |
+| --- | --- | --- | --- |
+| Policy brief | [Template](documents/templates/policy-brief.md) | [Data center brief](documents/data-center-community-benefits/policy-brief.md) | [Policy brief](documents/school-ai-purchasing/policy-brief.md) |
+| State bill | [Template](documents/templates/state-bill.md) | [Data center model bill](documents/data-center-community-benefits/state-bill.md) | [State bill](documents/school-ai-purchasing/state-bill.md) |
+| Committee fact sheet | [Template](documents/templates/committee-fact-sheet.md) | [Data center fact sheet](documents/data-center-community-benefits/committee-fact-sheet.md) | [Committee fact sheet](documents/school-ai-purchasing/committee-fact-sheet.md) |
+| Legislative package | [Template](documents/templates/legislative-package.md) | [Data center package](documents/data-center-community-benefits/legislative-package.md) | [Legislative package](documents/school-ai-purchasing/legislative-package.md) |
+| Rebuttals | [Template](documents/templates/rebuttals.md) | [Data center rebuttals](documents/data-center-community-benefits/rebuttals.md) | [Rebuttals](documents/school-ai-purchasing/rebuttals.md) |
+| Talking points | [Template](documents/templates/talking-points.md) | [Data center talking points](documents/data-center-community-benefits/talking-points.md) | [Talking points](documents/school-ai-purchasing/talking-points.md) |
 
 ## Suggest a change
 

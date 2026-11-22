@@ -1,8 +1,27 @@
 {
   "repository": "https://github.com/jdaily26/open-legislation",
   "collections": {
-    "template": "templates",
-    "example": "data-center-community-benefits"
+    "template": {
+      "directory": "templates",
+      "label": "Template",
+      "eyebrow": "Reusable templates",
+      "title": "Draft a policy proposal",
+      "summary": "Build the bill, brief, fact sheet, and materials for a hearing."
+    },
+    "example": {
+      "directory": "data-center-community-benefits",
+      "label": "Data center example",
+      "eyebrow": "First proposal",
+      "title": "Data center community benefits",
+      "summary": "Give residents a say before cities award data center incentives."
+    },
+    "ai-schools": {
+      "directory": "school-ai-purchasing",
+      "label": "AI in schools",
+      "eyebrow": "Second proposal",
+      "title": "School district AI purchases",
+      "summary": "Show which AI tools districts pay for, who can use them, and what they cost."
+    }
   },
   "documents": {
     "brief": { "label": "Policy brief", "summary": "Make the policy decision", "file": "policy-brief.md" },

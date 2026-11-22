@@ -85,11 +85,11 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
 
     catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
-    data = {"repository": catalog["repository"], "documents": {}}
+    data = {"repository": catalog["repository"], "collections": catalog["collections"], "documents": {}}
     for key, entry in catalog["documents"].items():
         document = {"label": entry["label"], "summary": entry["summary"], "editions": {}}
-        for edition, directory in catalog["collections"].items():
-            source = f"documents/{directory}/{entry['file']}"
+        for edition, collection in data["collections"].items():
+            source = f"documents/{collection['directory']}/{entry['file']}"
             versions = history(source, catalog["releases"], catalog["draftDates"], f"{key}/{edition}")
             for version in versions:
                 reference_word = f"{key}-{edition}-{version['label']}.docx"
