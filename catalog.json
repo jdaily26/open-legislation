@@ -8,7 +8,9 @@
     "brief": { "label": "Policy brief", "summary": "Make the policy decision", "file": "policy-brief.md" },
     "bill": { "label": "State bill", "summary": "Read the legal language", "file": "state-bill.md" },
     "fact-sheet": { "label": "Committee fact sheet", "summary": "Explain the bill on one page", "file": "committee-fact-sheet.md" },
-    "package": { "label": "Legislative package", "summary": "Prepare for a sponsor and hearing", "file": "legislative-package.md" }
+    "package": { "label": "Legislative package", "summary": "Prepare for a sponsor and hearing", "file": "legislative-package.md" },
+    "rebuttals": { "label": "Rebuttals", "summary": "Answer common objections", "file": "rebuttals.md" },
+    "talking-points": { "label": "Talking points", "summary": "Explain the bill in public", "file": "talking-points.md" }
   },
   "draftDates": { "v0.1": "2026-11-20" },
   "releases": {

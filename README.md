@@ -10,6 +10,8 @@ A public collection of policy briefs, model state bills, committee fact sheets a
 | State bill | [Template](documents/templates/state-bill.md) | [Data center model bill](documents/data-center-community-benefits/state-bill.md) |
 | Committee fact sheet | [Template](documents/templates/committee-fact-sheet.md) | [Data center fact sheet](documents/data-center-community-benefits/committee-fact-sheet.md) |
 | Legislative package | [Template](documents/templates/legislative-package.md) | [Data center package](documents/data-center-community-benefits/legislative-package.md) |
+| Rebuttals | [Template](documents/templates/rebuttals.md) | [Data center rebuttals](documents/data-center-community-benefits/rebuttals.md) |
+| Talking points | [Template](documents/templates/talking-points.md) | [Data center talking points](documents/data-center-community-benefits/talking-points.md) |
 
 ## Suggest a change
 
