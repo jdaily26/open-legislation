@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/jdaily26/open-legislation",
+  "collections": {
+    "template": "templates",
+    "example": "data-center-community-benefits"
+  },
+  "documents": {
+    "brief": { "label": "Policy brief", "summary": "Make the policy decision", "file": "policy-brief.md" },
+    "bill": { "label": "State bill", "summary": "Read the legal language", "file": "state-bill.md" },
+    "fact-sheet": { "label": "Committee fact sheet", "summary": "Explain the bill on one page", "file": "committee-fact-sheet.md" },
+    "package": { "label": "Legislative package", "summary": "Prepare for a sponsor and hearing", "file": "legislative-package.md" }
+  },
+  "releases": {
+    "v0.1": {
+      "bill/example": "Early model clauses cover the award, public review, the agreement, verification, and administration.",
+      "fact-sheet/template": "The first reusable fact sheet follows six committee headings with claim-level sources.",
+      "fact-sheet/example": "The first fact sheet pairs the proposed 30-day review with an example about library access."
+    },
+    "v1.0": {
+      "brief/template": "Adds a reusable brief for the policy decision, costs, delivery, and evidence.",
+      "brief/example": "Sets out the data-center proposal, worked costs, and the first decisions for a state sponsor.",
+      "bill/template": "Adds a nine-section template from definitions through the effective date.",
+      "bill/example": "Turns five working clauses into a nine-section bill with a review process and successor obligations.",
+      "fact-sheet/template": "Tightens the committee prompts and keeps a source next to each material claim.",
+      "fact-sheet/example": "Adds a priced library example and ties the public review, remedies, and reporting to bill sections.",
+      "package/template": "Adds a complete package from sponsor note through fiscal worksheet, testimony, and amendments.",
+      "package/example": "Fills in the agreement terms, library budget, proof of delivery, and hearing materials."
+    }
+  }
+}

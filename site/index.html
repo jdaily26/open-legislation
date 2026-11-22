@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3f1e8">
+<meta name="description" content="Policy templates, model state bills, committee fact sheets, and revision history. Start with Data Center Community Benefits.">
+<title>Open Legislation · Policy library</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#document">Skip to document</a>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>Open Legislation</a>
+    <div class="top-actions">
+      <button type="button" id="theme-toggle" class="button button-text" hidden>Dark mode</button>
+      <a href="https://github.com/jdaily26/open-legislation" id="repository-link" class="button">GitHub</a>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="main">
+  <section class="hero" aria-labelledby="library-title">
+    <div>
+      <h1 id="library-title">Legislative library</h1>
+      <p>Policy templates, model bills, and the record of how they change.</p>
+    </div>
+    <div class="hero-example">
+      <span class="eyebrow">First proposal</span>
+      <h2>Data center community benefits</h2>
+      <p>Give residents a say before cities award data center incentives.</p>
+    </div>
+  </section>
+  <div class="layout">
+    <aside class="sidebar" id="documents" tabindex="-1">
+      <h2 id="documents-title">Documents</h2>
+      <nav class="document-list" aria-labelledby="documents-title" id="document-list"></nav>
+      <noscript><p>Browse the documents and their history on <a href="https://github.com/jdaily26/open-legislation/tree/main/documents">GitHub</a>.</p></noscript>
+    </aside>
+    <section class="workspace" aria-label="Selected document" id="workspace">
+      <div class="toolbar" hidden>
+        <nav class="view-switch" aria-label="Document edition">
+          <a id="template-link" href="#brief/template" data-route>Template</a>
+          <a id="example-link" href="#brief/example" data-route>Data center example</a>
+        </nav>
+        <div class="toolbar-actions">
+          <a class="button" id="history-link" href="#brief/example/history" data-route>Revision history</a>
+          <a class="button button-primary" id="contribute-link" href="https://github.com/jdaily26/open-legislation">Suggest an edit</a>
+        </div>
+      </div>
+      <div class="workspace-body">
+        <div class="doc-tools" id="document-tools" hidden>
+          <p class="version-label" id="version-label"></p>
+          <details class="contents" id="contents" hidden>
+            <summary>Contents</summary>
+            <ul id="contents-list"></ul>
+          </details>
+          <details class="document-files actions-menu" id="document-files">
+            <summary class="button button-text">Downloads</summary>
+            <div class="options-box">
+              <button id="download-markdown" type="button">Download Markdown</button>
+              <a id="download-word" download hidden>Download Word</a>
+              <button id="print-document" type="button">Print or save PDF</button>
+            </div>
+          </details>
+        </div>
+        <article class="document" id="document" tabindex="-1">
+          <!-- INITIAL_DOCUMENT -->
+        </article>
+        <footer class="workspace-footer" id="document-footer" hidden>
+          <a href="#documents" id="back-to-documents">Back to documents</a>
+          <a id="source-link">View source on GitHub</a>
+        </footer>
+      </div>
+    </section>
+  </div>
+</main>
+<script type="application/json" id="library-data"><!-- LIBRARY_DATA --></script>
+<script src="library.js"></script>
+</body>
+</html>
