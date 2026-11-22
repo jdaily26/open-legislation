@@ -151,6 +151,8 @@
   @media (max-width: 24rem) {
     .button { padding-inline: .6rem; }
     .brand-mark { display: none; }
+    .view-switch { display: grid; width: 100%; grid-template-columns: repeat(auto-fit, minmax(min(100%, 5rem), 1fr)); }
+    .view-switch a { justify-content: center; padding-inline: .3rem; text-align: center; overflow-wrap: anywhere; }
     .hero p, .hero-example p { font-size: .9rem; }
   }
   @media print {
