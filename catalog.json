@@ -26,6 +26,12 @@
       "fact-sheet/example": "Adds a priced library example and ties the public review, remedies, and reporting to bill sections.",
       "package/template": "Adds a complete package from sponsor note through fiscal worksheet, testimony, and amendments.",
       "package/example": "Fills in the agreement terms, library budget, proof of delivery, and hearing materials."
+    },
+    "v1.1": {
+      "brief/example": "Counts the full public cost, ties payments to verified delivery, and adds a resident enforcement route.",
+      "bill/example": "Closes gaps in incentive coverage and adds benefit floors, continuous security, ownership controls, independent verification, and enforceable remedies.",
+      "fact-sheet/example": "Explains the 45-day review, benefit floor, payment gates, independent oversight, and resident enforcement.",
+      "package/example": "Prices a $180,000 benefits agreement and shows when the city can release funds, draw security, and protect service."
     }
   }
 }

@@ -21,4 +21,4 @@ Accepted document changes appear in the library’s revision history. The histor
 
 Run `python3 -m pip install -r requirements.txt` in a virtual environment, then `python3 tools/build.py`. Open `dist/index.html` or serve `dist` with a local web server. Clone with full Git history to build all revisions.
 
-The Markdown files under `documents/` are the source. Update `catalog.json` when adding a document to the library. Optional release notes use a commit title such as `v1.1: Short summary` and an entry under that version in the catalog. Word files in `downloads/` are fixed v1.0 reference copies.
+The Markdown files under `documents/` are the source. Update `catalog.json` when adding a document to the library. Optional release notes use a commit title such as `v1.1: Short summary` and an entry under that version in the catalog. Word files in `downloads/` are matched to the document and version in their filenames.

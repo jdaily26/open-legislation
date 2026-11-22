@@ -91,9 +91,9 @@ def main():
         for edition, directory in catalog["collections"].items():
             source = f"documents/{directory}/{entry['file']}"
             versions = history(source, catalog["releases"], catalog["draftDates"], f"{key}/{edition}")
-            reference_word = f"{key}-{edition}-v1.0.docx"
             for version in versions:
-                if version["label"] == "v1.0" and (ROOT / "downloads" / reference_word).is_file():
+                reference_word = f"{key}-{edition}-{version['label']}.docx"
+                if (ROOT / "downloads" / reference_word).is_file():
                     version["word"] = "downloads/" + reference_word
             document["editions"][edition] = {"source": source, "revisions": versions}
         data["documents"][key] = document

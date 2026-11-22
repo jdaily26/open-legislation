@@ -1,35 +1,40 @@
 # Committee Fact Sheet
 
-Data Center Community Benefits Act  |  Version 1.0
+Data Center Community Benefits Act | Version 1.1
 
 ## Summary
 
-Before a city or county gives a data center a discretionary cash grant or negotiated local tax rebate, it would have to show the public cost, hear residents, and secure an enforceable benefits agreement. The committee is asked to hear the bill.
+Require enforceable community benefits before a city or county awards discretionary public assistance to a data center. Ask a state sponsor to request a draft and a committee hearing.
 
 ## Background
 
-Virginia’s legislative audit agency found that most data-center job gains were in construction. Lancaster’s published agreement summary describes scheduled payments and financial security. New Jersey’s economic development agency provides resources to help towns assess proposed projects. \[1–3\]
+Data-center agreements can include service commitments, payment schedules, and financial security. Local costs can include land, grid upgrades, and water infrastructure as well as tax incentives. [1–3]
 
 ## The Problem
 
-A pledge to buy computers can leave a city with equipment and no budget for evening staff. The city needs the cost of operating the service, a payment schedule, and a way for residents to see whether the service happened.
+A developer may promise a library computers and later leave residents without staffed hours. To judge the deal, residents need the full public cost, proof of delivery, and a way to enforce promises if the project changes hands.
 
 ## The Solution
 
-Post the terms 30 days before the vote. Hear residents and respond to material issues. Sign a deal with deadlines, proof, and remedies. Publish what the developer paid and what the community received. In the worked example, the developer commits $100,000 to equip and staff an existing library lab for three years. (Secs. 4–8)
+- **Count the whole deal.** Combine related phases and count public and ratepayer costs. Require community benefits worth at least 15% of public cost across at least three categories. At least 40% of benefit value must go in cash or cash equivalent to public or independent nonprofit providers.
+- **Review it in public.** Give residents 45 days’ notice, a hearing, and the local government’s responses at least seven days before a vote. Reopen review when terms change.
+- **Pay as benefits are delivered.** Hold back at least 75% of assistance until half the benefit value is verified. Bind the parent and operator, require consent for qualifying ownership changes, and secure all remaining benefits with an independent letter of credit or bond.
+- **Verify and enforce.** Fund an independent monitor and publish the findings. Require withholding and recovery after breach, with early withholding while review is pending. Give affected residents and community groups a path to court.
+
+**Worked example.** A project with $1.2 million in public costs must deliver $180,000 in benefits. That funds three years of staffed library access, workforce training, and transit fares. See the package for the budget and payment schedule.
 
 ## Support
 
-Invite residents, library staff, and city finance teams to review the draft, price the work, and state their position before the hearing.
+Invite residents, service providers, local finance staff, and the operator to review the proposal before the hearing.
 
 ## For More Information
 
-Use the sponsoring legislative office’s public contact when a sponsor is designated.
+Use the sponsoring legislative office’s public contact once a sponsor is designated.
 
 ## Sources
 
-[\[1\] Virginia JLARC, Data Centers in Virginia (2024), economic and local effects](<https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp>)
+[1] [Lancaster community benefits agreement summary](<https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf>)
 
-[\[2\] City of Lancaster, Community Benefits Agreement Summary (2025), p. 2](<https://www.cityoflancasterpa.gov/wp-content/uploads/2025/11/Community-Benefits-Agreement-Summary-1-1.pdf>)
+[2] [New Jersey Economic Development Authority data center toolkit](<https://www.njeda.gov/datacenterta/>)
 
-[\[3\] New Jersey Economic Development Authority, Data Center Toolkit](<https://www.njeda.gov/datacenterta/>)
+[3] [Public Utilities Commission of Ohio data center resources](<https://puco.ohio.gov/utilities/electricity/resources/data-centers>)
